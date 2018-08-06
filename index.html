@@ -37,6 +37,9 @@
         <link rel="stylesheet" href="css/style.css" />
         <!-- responsive -->
         <link rel="stylesheet" href="css/responsive.css" />
+
+        <link rel="stylesheet" type="text/css" href="https:/cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+
         <!--[if IE]>
             <link rel="stylesheet" href="css/style-ie.css" />
         <![endif]-->
@@ -54,7 +57,7 @@
             gtag('config', 'UA-117990810-1');
         </script>
 
-		<!-- Start of Async Drift Code -->
+        <!-- Start of Async Drift Code -->
 		<script>
 		"use strict";
 
@@ -80,10 +83,31 @@
 		}();
 		drift.SNIPPET_VERSION = '0.3.1';
 		drift.load('abbedtdcehss');
-		</script>
+        </script>
 		<!-- End of Async Drift Code -->		
-		
-		
+                
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+        <script>
+        window.addEventListener("load", function(){
+        window.cookieconsent.initialise({
+          "palette": {
+            "popup": {
+              "background": "#237afc"
+            },
+            "button": {
+              "background": "#fff",
+              "text": "#237afc"
+            }
+          },
+          "showLink": false,
+          "position": "bottom-right",
+          "content": {
+            "message": "Esta web utiliza cookies para facilitar y mejorar la experiencia de navegación. Si sigues navegando por nuestra web, entendemos que aceptas el uso que hacemos de ellas.",
+            "dismiss": "Aceptar"
+          }
+        })});
+        </script>
+
     </head>
     <body>
         <!-- navigation --> 
@@ -102,7 +126,7 @@
                                 <li><a href="#usecases" class="inner-link">Usos</a></li>
                                 <li><a href="#buy" class="inner-link">Precio</a> </li>
                                 <li><a href="#contact-us" class="inner-link">Contacto</a> </li>
-                                <li><a href="https://app.chipfox.cz" target="_blank" class="btn-primary btn btn-small button btn-round xs-margin-bottom-five">Acceso</a> </li>
+                                <li><a href="https://app.chipfox.cz" target="_blank" class="btn-primary btn btn-small button btn-round xs-margin-bottom-five">Login APP</a> </li>
                             </ul>
                         </div>
                     </div>
@@ -370,12 +394,19 @@
                 <div class="container">
                     <div class="row margin-three">
                         <!-- copyright -->
-                        <div class="col-md-6 col-sm-6 col-xs-12 copyright text-left letter-spacing-1 xs-text-center xs-margin-bottom-one">
+                        <div class="col-md-4 col-sm-4 col-xs-12 copyright text-left letter-spacing-1 xs-text-center xs-margin-bottom-one">
                             &copy; 2018 CHIPFOX Wireless Solutions.
                         </div>
                         <!-- end copyright -->
+
+                        <!-- avis legal -->
+                        <div class="col-md-4 col-sm-4 col-xs-12 text-left letter-spacing-1 xs-text-center xs-margin-bottom-one">
+                            Aviso Legal
+                        </div>
+                        <!-- end avis legal -->
+
                         <!-- logo -->
-                        <div class="col-md-6 col-sm-6 col-xs-12 footer-logo text-right xs-text-center">
+                        <div class="col-md-4 col-sm-4 col-xs-12 footer-logo text-right xs-text-center">
                             <a href="index.html"><img src="images/chipfox/logo_gray.svg" alt=""/></a>
                         </div>
                         <!-- end logo -->
